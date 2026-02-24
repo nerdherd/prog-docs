@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Postion and Velocity Template Subsystem Test &#8212; prog-docs 1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=27fed22d" />
+    <script src="../_static/documentation_options.js?v=29a6c3e3"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="postion-and-velocity-template-subsystem-test">
+<h1>Postion and Velocity Template Subsystem Test<a class="headerlink" href="#postion-and-velocity-template-subsystem-test" title="Link to this heading">¶</a></h1>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Daniel
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>We made a new file called Flywheel</p></li>
+<li><p>We extended Flywheel from Template Subsystem</p></li>
+<li><p>We added motor configurations</p></li>
+<li><p>We added variables for desired values and if the robot is enabled</p></li>
+<li><p>We added subsystem mode which is an enum to choose whether we are using position or velocity</p></li>
+<li><p>We added a follower request using this template
+<code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">TemplateSubsystem(String</span> <span class="pre">name,</span> <span class="pre">int</span> <span class="pre">motor1ID,</span> <span class="pre">int</span> <span class="pre">motor2ID,</span> <span class="pre">boolean</span> <span class="pre">reverseMotor2,</span> <span class="pre">SubsystemMode</span> <span class="pre">mode,</span> <span class="pre">double</span> <span class="pre">defaultValue)</span></code></p></li>
+<li><p>Then we programmed which motor would be the follower</p></li>
+<li><p>We added the mode and value that we wanted and gave the robot the velocity or position voltage</p></li>
+<li><p>We ran the robot with elastic to look at the velocity and position of the robot</p></li>
+<li><p>While testing we noticed a problem with the postion of the pivot and are currently trying to fix it</p></li>
+<li><p>The problem is that it’s zero position is in the high negatives</p></li>
+<li><p>The pivot postion was fixed by adding the gear ratio back</p></li>
+<li><p>There was a problem with the rollers due to using the constant class which was fixed by reverting back to the flywheel class</p></li>
+<li><p><strong>Fixed flywheel position control with motion magic setting cruise velocity and acceleration</strong></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="configuring-radio">
+<h1>Configuring Radio<a class="headerlink" href="#configuring-radio" title="Link to this heading">¶</a></h1>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Rohan
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Important details</p>
+<ul>
+<li><p>The 1st led (led on the left) signifies if power is being transmitted to the radio.</p></li>
+<li><p>The 2nd led signifies the status of the radio.</p></li>
+<li><p>The 3rd and 4th leds signify if the radio is connected to the wifi.</p></li>
+<li><p>The 5th led (led on the right) signifies if the radio is connected to the roborio.</p></li>
+</ul>
+</li>
+<li><p>Steps to Configure:</p></li>
+</ul>
+<ol class="arabic simple">
+<li><p>Connect ethernet from the computer to the radio</p></li>
+<li><p>Connect ethernet from the radio to the roborio</p></li>
+<li><p>Connect 1 pair of power cables from the roborio to the PDH</p></li>
+<li><p>Connect another pair of power cables from the PDH to the VRM.</p></li>
+<li><p>Connect the last pair of power cables from the VRM to the radio.</p></li>
+<li><p>Connect the battery to the PDH and turn it on.</p></li>
+<li><p>Download the VividHosting software from the VividHosting website.</p></li>
+<li><p>Open the software and run the decrypt check zone to upload to the radio</p></li>
+</ol>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">prog-docs</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../test.html">Hello</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../test%202.html">Hello</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../test%203.html">Hello</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../index%202.html">prog-docs documentation</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2026, NerdHerd.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.0.4</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../_sources/01-January/1-11-26-Position-and-Velocity.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
