@@ -29,6 +29,8 @@ exclude_patterns = []
 html_theme = 'alabaster'
 html_static_path = ['_static']
 
+html_favicon = '_static/Nerd.svg'
+
 html_theme_options = {
     "font_family": "'Poppins'",
     "body_text": "#ffffffff",
@@ -36,6 +38,10 @@ html_theme_options = {
     "sidebar_header": "#ffffffff",
     "sidebar_link": "#ffffffff",
     "link": "#ffffffff",
+    "narrow_sidebar_bg": "var(--darker-navy)",
+    "narrow_sidebar_fg": "#ffffffff",
+    "narrow_sidebar_link": "#ffffffff",
     "link_hover": "var(--light-blue)",
-    "description": "The NerdHerd Programming Documentation"
+    "description": "The NerdHerd Programming Documentation",
+    "logo": "Nerd.svg",
 }
