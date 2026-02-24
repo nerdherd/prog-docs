@@ -28,3 +28,14 @@ exclude_patterns = []
 
 html_theme = 'alabaster'
 html_static_path = ['_static']
+
+html_theme_options = {
+    "font_family": "'Poppins'",
+    "body_text": "#ffffffff",
+    "sidebar_text": "#ffffffff",
+    "sidebar_header": "#ffffffff",
+    "sidebar_link": "#ffffffff",
+    "link": "#ffffffff",
+    "link_hover": "var(--light-blue)",
+    "description": "The NerdHerd Programming Documentation"
+}
