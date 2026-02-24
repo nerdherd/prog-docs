@@ -26,7 +26,7 @@ jobs:
     - name: Build Sphinx for Github Pages
       run: |
         rm -rf ./docs
-        sphinx-build -M html source docs
+        sphinx-build -b html source docs
     - name: Create .nojekyll
       run: |
         touch ./docs/.nojekyll
