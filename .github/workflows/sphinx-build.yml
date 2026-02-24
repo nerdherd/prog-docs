@@ -1,0 +1,39 @@
+# build sphinx
+
+name: Sphinx build and deploy
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Install python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install --upgrade -r requirements.txt
+    - name: Build Sphinx for Github Pages
+      run: |
+        rm -rf ./docs
+        sphinx-build -M html source docs
+    - name: Create .nojekyll
+      run: |
+        touch ./docs/.nojekyll
+    - name: Commit and push changes
+      run: |
+        git config --global user.name "687 Autobuild"
+        git config --global user.email "nerdherd@users.noreply.github.com"
+        git add ./.
+        git commit -m "Autobuild latest version"
+        git push
