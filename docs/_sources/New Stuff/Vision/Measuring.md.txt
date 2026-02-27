@@ -1,4 +1,4 @@
-## Procedure for Measuring Limelights
+# Procedure for Measuring Limelights
 1. Open Limelight Dashboard using IP address.
 2. Measure the width of the robot in meters.
 3. Divide the width by 2.

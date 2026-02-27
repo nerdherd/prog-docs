@@ -1,3 +1,5 @@
+# Configuring Radio
+
 - Important details
     - The 1st led (led on the left) signifies if power is being transmitted to the radio.
     - The 2nd led signifies the status of the radio.

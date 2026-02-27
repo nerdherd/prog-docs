@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Limelight Configuration &#8212; prog-docs 1 documentation</title>
+    <title>Subsystems &#8212; prog-docs 1 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=c02b37e5" />
@@ -15,6 +15,8 @@
     <link rel="icon" href="../_static/Nerd.svg"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Misc" href="Subsystems/Misc.html" />
+    <link rel="prev" title="Misc" href="Radio/Misc.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -32,34 +34,13 @@
 
           <div class="body" role="main">
             
-  <section id="limelight-configuration">
-<h1>Limelight Configuration<a class="headerlink" href="#limelight-configuration" title="Link to this heading">¶</a></h1>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>James
-Group: James, William
-</pre></div>
+  <section id="subsystems">
+<h1>Subsystems<a class="headerlink" href="#subsystems" title="Link to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Subsystems/Misc.html">Misc</a></li>
+</ul>
 </div>
-</section>
-<section id="notes">
-<h1>Notes<a class="headerlink" href="#notes" title="Link to this heading">¶</a></h1>
-<ul class="simple">
-<li><p>The limelight should be connected to power through VM, 5 volts and 500 milliamps</p></li>
-<li><p>The radio should be connected to power though the VRM, 12 Volts 2 amps</p></li>
-<li><p>Using ethernet make a connection from the ROBO-RIO to the radio on AUX</p></li>
-<li><p>Then from the radio on AUX to the ethernet switch</p></li>
-<li><p>Then from the ethernet switch you can connect the Limelights</p></li>
-<li><p>Open Limelight hardware manager and click find devices</p></li>
-<li><p>Click on the IP address to go to the configuration page</p></li>
-<li></li>
-</ul>
-</section>
-<section id="adding-vision-to-localization">
-<h1>Adding vision to localization<a class="headerlink" href="#adding-vision-to-localization" title="Link to this heading">¶</a></h1>
-<ul class="simple">
-<li><p>anumeration</p></li>
-<li><p>In constants.java under vision constants for each limelight on the robot you create an anumeration for it using the limelights name and IP address from limelight hardware manager</p></li>
-<li><p>To make sure localization is using vision check to see in constants.java that the variable USE_VISION is set to True</p></li>
-<li></li>
-</ul>
 </section>
 
 
@@ -95,17 +76,22 @@ Group: James, William
     </div>
 </search>
 <script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../New%20Stuff/auto.html">Auto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../New%20Stuff/radio.html">Radio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../New%20Stuff/subsystems.html">Subsystems</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../New%20Stuff/vision.html">Vision</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="auto.html">Auto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radio.html">Radio</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Subsystems</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Subsystems/Misc.html">Misc</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vision.html">Vision</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="Radio/Misc.html" title="previous chapter">Misc</a></li>
+      <li>Next: <a href="Subsystems/Misc.html" title="next chapter">Misc</a></li>
   </ul></li>
 </ul>
 </div>
@@ -129,7 +115,7 @@ Group: James, William
       &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
       
       |
-      <a href="../_sources/Folder/1-17-26-Limelight-Configuration.md.txt"
+      <a href="../_sources/New Stuff/subsystems.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 
