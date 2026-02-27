@@ -1,4 +1,4 @@
-prog-docs documentation
+Programming Documentation
 =======================
 
 Add your content using ``reStructuredText`` syntax. See the
@@ -9,6 +9,7 @@ documentation for details.
 .. toctree::
    :maxdepth: 2
    
-   test.md
-   test 2.md
-   test 3.md
+   New Stuff/auto.rst
+   New Stuff/radio.rst
+   New Stuff/subsystems.rst
+   New Stuff/vision.rst
