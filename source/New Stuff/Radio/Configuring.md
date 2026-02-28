@@ -15,3 +15,6 @@
 7. Download the VividHosting software from the VividHosting website.
 8. Open the software and run the decrypt check zone to upload to the radio
 From 1-11-26-Position-and-Velocity.md
+
+Wiring guide found [here] (https://frc-radio.vivid-hosting.net/overview/wiring-your-radio#:~:text=the%20PoE%20cable.-,OM5P%20Replacement%20%28VRM%29,-This%20method%20is). DO NOT PLUG INTO RIO, PLUG THE ETHERNET INTO AUX AND TURN OFF POWER OVER ETHERNET
+From 1-16-26-Radio-Configuration.md
