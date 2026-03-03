@@ -43,12 +43,12 @@
 - Shooter right = 0.208437
 - Shooter left  = 0.250255
 
-### kA Values
-- Shooter right = 0.021071
+### kA Values,
+- Shooter right = 0.021070
 - Shooter left  = 0.006534
 
 ### kV Values
-- Shooter right = 0.119947
+- Shooter right = 0.119948
 - Shooter left  = 0.122817
 
 ### Feedforward Equation
