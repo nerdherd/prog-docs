@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>How to make an Auto Path &#8212; prog-docs 1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/alabaster.css?v=c02b37e5" />
+    <script src="../../../_static/documentation_options.js?v=29a6c3e3"></script>
+    <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <link rel="icon" href="../../../_static/Nerd.svg"/>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="Radio" href="../../radio.html" />
+    <link rel="prev" title="Linked Waypoints" href="LinkedWaypoint.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="how-to-make-an-auto-path">
+<h1>How to make an Auto Path<a class="headerlink" href="#how-to-make-an-auto-path" title="Link to this heading">¶</a></h1>
+<ol class="arabic simple">
+<li><p>Create a new path</p></li>
+<li><p>Open Waypoints &gt; Start Point &gt; Link Waypoint (Link button)</p></li>
+<li><p>Select the waypoint for the Start Point</p></li>
+<li><p>Repeat steps 2 and 3 for the End Point</p></li>
+<li><p>Scroll down to Ideal Starting State</p></li>
+<li><p>Make sure the rotation is correct by changing the rotation (Deg) value</p></li>
+<li><p>Repeat steps 5 and 6 for Goal End State</p></li>
+<li><p>In the map on the left click on Start Point (Green dot inside of green box) and drag the Control Point (Orange dot connected to Orange Line) onto the End Point (Red dot inside of red box). Repeat with the End point’s Control Length <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p></li>
+<li><p>Scroll down on the right side to Path Optimizer and press Optimize, then Accept</p></li>
+<li><p>Check that the robot’s path doesn’t go over a part of the field that it physically can’t go over. If the robot does go over a part of the field drag the Control Points to make the path avoid those points. Try to keep the runtime (The number at the top left of the right window) as small as possible.</p></li>
+<li><p>Name the path according the predetermined naming conventions</p></li>
+</ol>
+</section>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>From a member’s testing, making the control length the same distance as the two start points and end points and then using the PathPlanner optimizer yields the lowest optimized runtime.
+From 1-17-26-AutoPaths.md</p>
+</aside>
+</aside>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<p class="logo">
+  <a href="../../../index.html">
+    <img class="logo" src="../../../_static/Nerd.svg" alt="Logo" />
+    
+  </a>
+</p>
+
+
+
+<p class="blurb">The NerdHerd Programming Documentation</p>
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../../auto.html">Auto</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="LinkedWaypoint.html">Linked Waypoints</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">How to make an Auto Path</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../subsystems.html">Subsystems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../vision.html">Vision</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../days.html">Documentation by day</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../auto.html">Auto</a><ul>
+      <li>Previous: <a href="LinkedWaypoint.html" title="previous chapter">Linked Waypoints</a></li>
+      <li>Next: <a href="../../radio.html" title="next chapter">Radio</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2026, NerdHerd.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 9.0.4</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="../../../_sources/NewFiles/Auto/PathPlanner/PathCreation.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

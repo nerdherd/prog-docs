@@ -1,0 +1,8 @@
+1-24-26
+=======================
+
+.. toctree::
+   :maxdepth: 2
+   
+   1-24-26-Auto-Shooter-Pos.md
+   1-24-26-Kraken-Housing.md
