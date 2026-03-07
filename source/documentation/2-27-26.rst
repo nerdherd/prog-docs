@@ -1,8 +1,7 @@
-Vision
+2-27-26
 =======================
 
 .. toctree::
    :maxdepth: 2
    
-   Vision/Misc.md
-   Vision/hardware.rst
+   2-27-26-V3-Shooter-Collection.md

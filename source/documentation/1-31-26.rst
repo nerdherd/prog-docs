@@ -1,8 +1,8 @@
-Vision
+1-31-26
 =======================
 
 .. toctree::
    :maxdepth: 2
    
-   Vision/Misc.md
-   Vision/hardware.rst
+   1-31-26-Intake.md
+   1-31-26-MegaTag1.md

@@ -4,5 +4,5 @@ Vision
 .. toctree::
    :maxdepth: 2
    
-   Vision/Misc.md
-   Vision/hardware.rst
+   Hardware/Measuring.md
+   Hardware/VisionToLocalization.md

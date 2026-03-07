@@ -2,10 +2,10 @@
     James and Rohan
     Group: James, Rohan, William
 
-# Goals 
+## Goals 
 - Test and debug Mason's ring drive code
 
-# Notes
+## Notes
 - Robot is supposed to move to position of joystick in the set circle
 - Lowered speed of ring drive
 - Contructor takes swereve drive and 2 inputs - the x and y input of the joystick

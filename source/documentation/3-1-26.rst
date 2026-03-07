@@ -1,8 +1,7 @@
-Vision
+3-1-26
 =======================
 
 .. toctree::
    :maxdepth: 2
    
-   Vision/Misc.md
-   Vision/hardware.rst
+   3-1-26-V3-Shooter-Data-Continued.md
