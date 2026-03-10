@@ -44,4 +44,5 @@ html_theme_options = {
     "link_hover": "var(--light-blue)",
     "description": "The NerdHerd Programming Documentation",
     "logo": "Nerd.svg",
+    "pre_bg": "#061028"
 }
