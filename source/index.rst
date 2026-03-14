@@ -6,3 +6,4 @@ Programming Documentation
    
    days.rst
    categories.rst
+   NewFiles/misc.rst
