@@ -148,3 +148,7 @@ code, .pre{
 .body a:visited:hover{
     color: #ffffffff;
 }
+
+* {
+    box-shadow: none !important;
+}

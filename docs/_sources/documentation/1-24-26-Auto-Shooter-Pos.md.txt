@@ -12,7 +12,7 @@
 
 ## Notes (Waypoint List)
 Name | Coordinates
-:--- | :--- | :---
+:--- | :---
 M1|(2.530, 5.112)
 M2|(2.530, 2.975)
 
