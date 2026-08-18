@@ -2,7 +2,8 @@ Subsystems
 =======================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    
    Subsystems/Creation.md
    Subsystems/Misc.md
+   Subsystems/MotorTesting.md
