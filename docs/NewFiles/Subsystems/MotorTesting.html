@@ -37,77 +37,119 @@
   <section id="procedure-for-testing-motors-on-the-testbench">
 <h1>Procedure for Testing Motors on the testbench<a class="headerlink" href="#procedure-for-testing-motors-on-the-testbench" title="Link to this heading">¶</a></h1>
 <ol class="arabic simple">
-<li><p>Hardware (Testbench)
-a. Roborio/systemcore
-b. PDP/PDH
-c. Motor
-d. Power Source/Battery
-e, Circuit Breaker
-f. CAN wiring
-g. Any encoder/sensor being tested
-h. Laptop/driver station</p></li>
-<li><p>Software configuration
-a. WPILib
-b. Phoenix 6
-c. Motor CAN ID
-d. Motor inversion
-e. Neutral mode
-f. Current limits
-g. Voltage limits
-h. Phoenix Tuner X</p></li>
-<li><p>Testing Procedure
-a. Label the Motor with a Motor number/name
-b. Secure the motor to the testbench.
-c. Verify all wiring and CAN connections.
-d. Establish a connection between Roborio/systemcore and Driver Station
-e. Load Phoenix Tuner X
-f. Enable the robot.
-g. Using Phoenix Tuner, feed the motor direct voltage
-h. Start with 1 volt and go up to 5 - 6 volts depending on the behavior of the motor
-i. Verify the motor rotates in the expected direction.
-j. Plot Stator Current, Supply Current, and Velocity
-i. Kraken X60
-a. Test Voltage: ~ 5 V
-b. Velocity: ~ 50 RPM
-c. Stator Current: ~1.1 A
-ii. Falcon
-a. Test Voltage: ~ 5 V
-b. Velocity: ~ 44 RPM
-c. Stator Current: ~ 0.9 A
-iii. Kraken X44
-a. Test Voltage: ~ 5 V
-b. Velocity: ~ 75 RPM
-c. Stator Current: ~ 2.2 A
-k. Repeat the test in the reverse direction.
-l. Observe any rumbling or loud, unusual noises
-m. Disable the motor
+<li><p>Hardware (Testbench)</p>
+<ul class="simple">
+<li><p>Roborio/systemcore</p></li>
+<li><p>PDP/PDH</p></li>
+<li><p>Motor</p></li>
+<li><p>Power Source/Battery</p></li>
+<li><p>Circuit Breaker</p></li>
+<li><p>CAN wiring</p></li>
+<li><p>Any encoder/sensor being tested</p></li>
+<li><p>Laptop/driver station</p></li>
+</ul>
+</li>
+<li><p>Software configuration</p>
+<ul class="simple">
+<li><p>WPILib</p></li>
+<li><p>Phoenix 6</p></li>
+<li><p>Motor CAN ID</p></li>
+<li><p>Motor inversion</p></li>
+<li><p>Neutral mode</p></li>
+<li><p>Current limits</p></li>
+<li><p>Voltage limits</p></li>
+<li><p>Phoenix Tuner X</p></li>
+</ul>
+</li>
+<li><p>Testing Procedure</p>
+<ul class="simple">
+<li><p>Label the Motor with a Motor number/name</p></li>
+<li><p>Secure the motor to the testbench.</p></li>
+<li><p>Verify all wiring and CAN connections.</p></li>
+<li><p>Establish a connection between Roborio/systemcore and Driver Station</p></li>
+<li><p>Load Phoenix Tuner X</p></li>
+<li><p>Enable the robot.</p></li>
+<li><p>Using Phoenix Tuner, feed the motor direct voltage</p></li>
+<li><p>Start with 1 volt and go up to 5 - 6 volts depending on the behavior of the motor</p></li>
+<li><p>Verify the motor rotates in the expected direction.</p></li>
+<li><p>Plot Stator Current, Supply Current, and Velocity</p>
+<ul>
+<li><p>Kraken X60</p>
+<ul>
+<li><p>Test Voltage: ~ 5 V</p></li>
+<li><p>Velocity: ~ 50 RPM</p></li>
+<li><p>Stator Current: ~1.1 A</p></li>
+</ul>
+</li>
+<li><p>Falcon</p>
+<ul>
+<li><p>Test Voltage: ~ 5 V</p></li>
+<li><p>Velocity: ~ 44 RPM</p></li>
+<li><p>Stator Current: ~ 0.9 A</p></li>
+</ul>
+</li>
+<li><p>Kraken X44</p>
+<ul>
+<li><p>Test Voltage: ~ 5 V</p></li>
+<li><p>Velocity: ~ 75 RPM</p></li>
+<li><p>Stator Current: ~ 2.2 A</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Repeat the test in the reverse direction.</p></li>
+<li><p>Observe any rumbling or loud, unusual noises</p></li>
+<li><p>Disable the motor
 NOTE: Additional testing at different voltages and under load should be performed before concluding motor performance. This is only the free spin test.</p></li>
-<li><p>Recording
-a. Motor Information
-i. Motor type/model
-b. Test Conditions
-i. Applied voltage
-ii. Whether the motor was free-spinning or under load
-c. Motor Measurements
-i. Velocity (RPM)
-ii. Stator Current (A)
-iii. Supply Current (A)
-iv. Applied Voltage (V)
-d. Motor Behavior
-i. Unusual noises
-ii. Rumbling, screeching, clicking
-iii. Vibrations or wobbling
-iv. Skipping or inconsistent rotation
-v. Changes in velocity or current
-vi. Any visible mechanical issues
-e. Controller/Communication
-i. Phoenix Tuner X faults
-ii. CAN errors
-iii. Motor controller warnings
-iv. Any unexpected behavior
-f. Final Assessment
-i. Good / Bad
-ii. Any important reasoning</p></li>
+</ul>
+</li>
+<li><p>Recording</p>
+<ul class="simple">
+<li><p>Motor Information</p>
+<ul>
+<li><p>Motor type/model</p></li>
+</ul>
+</li>
+<li><p>Test Conditions</p>
+<ul>
+<li><p>Applied voltage</p></li>
+<li><p>Whether the motor was free-spinning or under load</p></li>
+</ul>
+</li>
+<li><p>Motor Measurements</p>
+<ul>
+<li><p>Velocity (RPM)</p></li>
+<li><p>Stator Current (A)</p></li>
+<li><p>Supply Current (A)</p></li>
+<li><p>Applied Voltage (V)</p></li>
+</ul>
+</li>
+<li><p>Motor Behavior</p>
+<ul>
+<li><p>Unusual noises</p></li>
+<li><p>Rumbling, screeching, clicking</p></li>
+<li><p>Vibrations or wobbling</p></li>
+<li><p>Skipping or inconsistent rotation</p></li>
+<li><p>Changes in velocity or current</p></li>
+<li><p>Any visible mechanical issues</p></li>
+</ul>
+</li>
+<li><p>Controller/Communication</p>
+<ul>
+<li><p>Phoenix Tuner X faults</p></li>
+<li><p>CAN errors</p></li>
+<li><p>Motor controller warnings</p></li>
+<li><p>Any unexpected behavior</p></li>
+</ul>
+</li>
+<li><p>Final Assessment</p>
+<ul>
+<li><p>Good / Bad</p></li>
+<li><p>Any important reasoning</p></li>
+</ul>
+</li>
+</ul>
+</li>
 </ol>
 </section>
 
