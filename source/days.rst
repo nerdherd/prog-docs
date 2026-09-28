@@ -7,3 +7,4 @@ Documentation by month
    documentation/january2026.rst
    documentation/february2026.rst
    documentation/march2026.rst
+   documentation/september2026.rst
