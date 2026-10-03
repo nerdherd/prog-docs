@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Vision documentation &#8212; prog-docs 1 documentation</title>
+    <title>10-3-2026 Turret Code &#8212; prog-docs 1 documentation</title>
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="../_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="../_static/alabaster.css?v=f46cafab" />
@@ -15,8 +15,8 @@
     <link rel="icon" href="../_static/Nerd.svg"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Guides" href="../NewFiles/misc.html" />
-    <link rel="prev" title="10-3-2026 Turret Code" href="10-3-26-Turret-Code.html" />
+    <link rel="next" title="Vision documentation" href="category_vision.html" />
+    <link rel="prev" title="Drivetrain documentation" href="category_subsystems.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -34,36 +34,39 @@
 
           <div class="body" role="main">
             
-  <section id="vision-documentation">
-<h1>Vision documentation<a class="headerlink" href="#vision-documentation" title="Link to this heading">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="1-12-26-Vision-And-Auto.html">1-12-26 Vision And Auto</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="1-12-26-Vision-And-Auto.html#procedure-for-measuring-limelights">Procedure for Measuring Limelights</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="1-17-26-Limelight-Configuration.html">Limelight Configuration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="1-17-26-Limelight-Configuration.html#notes">Notes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1-17-26-Limelight-Configuration.html#adding-vision-to-localization">Adding vision to localization</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="1-26-26-Localization.html">1-26-26 Localization</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="1-26-26-Localization.html#goals">Goals</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1-26-26-Localization.html#steps">Steps</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1-26-26-Localization.html#notes">Notes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1-26-26-Localization.html#results">Results</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1-26-26-Localization.html#solutions">Solutions</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="1-31-26-MegaTag1.html">1-31-26 MegaTag1</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="1-31-26-MegaTag1.html#goals">Goals</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1-31-26-MegaTag1.html#results">Results</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1-31-26-MegaTag1.html#solutions">Solutions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1-31-26-MegaTag1.html#continuation">Continuation</a></li>
-</ul>
-</li>
-</ul>
+  <section id="turret-code">
+<h1>10-3-2026 Turret Code<a class="headerlink" href="#turret-code" title="Link to this heading">¶</a></h1>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Zachary Martinez, Anthony Wheeler, Mason Tsai
+</pre></div>
 </div>
+<section id="goals">
+<h2>Goals<a class="headerlink" href="#goals" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Write as much turret code as possible before the turret bot is created</p></li>
+</ul>
+</section>
+<section id="results">
+<h2>Results<a class="headerlink" href="#results" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Over the course of multiple days</p></li>
+<li><p>Refactored SuperSystem to use an enum-based approach to creating commands for individual subsystems</p></li>
+<li><p>Moved SuperSystem helper functions into <code class="docutils literal notranslate"><span class="pre">SuperSystemBase.java</span></code></p></li>
+<li><p>Refactored <code class="docutils literal notranslate"><span class="pre">lookAtHub</span></code> into a new, combined function, <code class="docutils literal notranslate"><span class="pre">getExpectedTurretPosition()</span></code>.</p></li>
+<li><p>Created initial versions of shoot with distance and prep turret commands</p></li>
+<li><p>Created a skeleton for <code class="docutils literal notranslate"><span class="pre">shootCommand</span></code></p></li>
+<li><p>Added controller bindings</p></li>
+<li><p>Refactored <code class="docutils literal notranslate"><span class="pre">LInTable</span></code></p></li>
+<li><p>Added javadocs and other documentation</p></li>
+</ul>
+</section>
+<section id="continuation">
+<h2>Continuation<a class="headerlink" href="#continuation" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Continue writing code</p></li>
+<li><p>Finish <code class="docutils literal notranslate"><span class="pre">shootCommand</span></code></p></li>
+<li><p>Test on robot when assembled</p></li>
+</ul>
+</section>
 </section>
 
 
@@ -103,8 +106,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../days.html">Documentation by month</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="../categories.html">Documentation by category</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="category_auto.html">Auto documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="category_subsystems.html">Drivetrain documentation</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Vision documentation</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="category_subsystems.html">Drivetrain documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="category_vision.html">Vision documentation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../NewFiles/misc.html">Guides</a></li>
@@ -115,8 +118,10 @@
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
   <li><a href="../categories.html">Documentation by category</a><ul>
-      <li>Previous: <a href="10-3-26-Turret-Code.html" title="previous chapter">10-3-2026 Turret Code</a></li>
-      <li>Next: <a href="../NewFiles/misc.html" title="next chapter">Guides</a></li>
+  <li><a href="category_subsystems.html">Drivetrain documentation</a><ul>
+      <li>Previous: <a href="category_subsystems.html" title="previous chapter">Drivetrain documentation</a></li>
+      <li>Next: <a href="category_vision.html" title="next chapter">Vision documentation</a></li>
+  </ul></li>
   </ul></li>
   </ul></li>
 </ul>
@@ -141,7 +146,7 @@
       &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
       
       |
-      <a href="../_sources/documentation/category_vision.rst.txt"
+      <a href="../_sources/documentation/10-3-26-Turret-Code.md.txt"
           rel="nofollow">Page source</a>
     </div>
 
