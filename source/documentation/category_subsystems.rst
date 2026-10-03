@@ -10,3 +10,4 @@ Drivetrain documentation
    1-16-26-Shooter-Intake-and-Indexer-Prototype.md
    1-31-26-Intake.md
    9-26-26-Turret-SOTM.md
+   10-3-26-Turret-Code.md
