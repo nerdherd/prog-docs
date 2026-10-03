@@ -1,4 +1,4 @@
-Drivetrain documentation
+Subsystem documentation
 =======================
 
 .. toctree::
